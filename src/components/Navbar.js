@@ -15,7 +15,7 @@ const Navbar = () => {
         
         <div className='md:flex hidden space-x-6 cursor-pointer items-center'>
             <span className='flex hover:text-green-700 space-x-2 items-center'>
-                <FaMapMarkerAlt size={25} />
+                <FaMapMarkerAlt size={20} />
                 <span className='font-bold '>Find a store</span>
             </span>
             <div className='flex space-x-4'>

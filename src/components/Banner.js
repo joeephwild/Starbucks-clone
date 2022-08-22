@@ -1,13 +1,12 @@
 import React from 'react'
 import banner from '../assets/b-img.jpg';
-import { Brew, Summer } from '../data/MenuData';
 import BoxSection3 from './BoxSection3';
 import BoxSextion from './BoxSextion';
 import Categories from './Categories';
 
 const Banner = () => {
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full">
     <div className="md:flex block w-full md:py-9 md:pr-7 md:space-x-10 md:bg-[#153f30] mt-6 ">
         <img src={banner} alt="banner" className='md:w-[560px]'/>
         <div className='bg-[#153f30] md:ml-12 flex flex-col items-center'>

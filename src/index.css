@@ -24,7 +24,7 @@
   }
   
 body { 
-    @apply bg-[#fafafa]  text-[#000000de] h-[100%] font-[400]  tracking-widest leading-6 m-0 p-0;
+    @apply bg-[#fafafa] relative text-[#000000de] h-[100%] font-[400]  tracking-widest leading-6 m-0 p-0;
 }
 
 h2 {

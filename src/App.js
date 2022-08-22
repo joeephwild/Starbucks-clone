@@ -1,11 +1,15 @@
 import React from "react";
-import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 
 function App() {
   return (
-    <div>
-      <Banner />
+    <div className="">
+      <Home />
+    <Footer />
+      
+      
     </div>
   );
 }

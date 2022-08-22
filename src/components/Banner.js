@@ -1,5 +1,8 @@
 import React from 'react'
 import banner from '../assets/b-img.jpg';
+import { Brew, Summer } from '../data/MenuData';
+import BoxSection3 from './BoxSection3';
+import BoxSextion from './BoxSextion';
 import Categories from './Categories';
 
 const Banner = () => {
@@ -13,6 +16,11 @@ const Banner = () => {
         </div>
     </div>
     <Categories />
+    <BoxSextion  />
+    <section className="">
+    <BoxSection3  />
+    </section>
+    
     </div>
 
   )

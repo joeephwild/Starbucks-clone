@@ -57,6 +57,8 @@ const JormForm = () => {
                 </div>
                 <p className='text-[#000000de] text-sm'>Know about initiatives, announcements and product offers.</p>
                </div>
+
+               
          </form>
        </div>
     </>

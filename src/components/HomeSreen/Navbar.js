@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -20,7 +21,10 @@ const Navbar = () => {
             </span>
             <div className='flex space-x-4'>
             <button className='text-[#000000de] border-2 border-[#000000de]  rounded-full px-3 py-2'>Sign in</button>
+            <Link to="/account/create">
             <button className='bg-[#000000de] text-[#fafafa] px-3 py-2 rounded-full'>Join now</button>
+            </Link>
+            
         </div>
         </div>
         

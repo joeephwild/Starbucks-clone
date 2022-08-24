@@ -1,19 +1,24 @@
 import React from "react";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import JoinNow from "./pages/JoinNow";
 
 
 function App() {
   return (
-    <div className="">
-      <Home />
-      <div className="flex flex-col justify-center my-[20px] items-center">
-    <span className='text-xs text-center max-w-[40rem] font-bold justify-center'>*Starbucks Rewards is available at participating stores. Some restrictions apply. For full program details, visit starbucks.com/rewards </span>
-    </div>
-    <Footer />
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/account/create" element={<JoinNow />} />
+    </Routes>
+    </BrowserRouter>
       
       
-    </div>
+   
+      
+      
+    </>
   );
 }
 

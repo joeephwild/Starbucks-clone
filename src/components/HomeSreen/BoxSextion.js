@@ -1,7 +1,7 @@
 import React from 'react'
-import { Summer } from '../data/MenuData'
+import { Summer } from '../../data/MenuData'
 
-const BoxSextion = ({ heading, text, button, image}) => {
+const BoxSextion = () => {
   return (
     <div>
         <section className='mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#fa91aa]'>

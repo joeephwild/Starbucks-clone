@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BackToSchool } from '../data/MenuData';
+import { BackToSchool } from '../../data/MenuData';
 
 const Categories = () => {
   return (

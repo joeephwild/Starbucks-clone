@@ -1,5 +1,5 @@
 import React from 'react'
-import { Brew } from '../data/MenuData'
+import { Brew } from '../../data/MenuData'
 
 const BoxSection3 = () => {
   return (

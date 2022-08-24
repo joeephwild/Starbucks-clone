@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <div>
     <div className="justify-items-end border-gray-300 mt-[30px] border-y-2 w-[100%] px-[30px]">
-    
+    <div className="flex flex-col justify-center my-[20px] items-center">
+    <span className='text-xs text-center max-w-[40rem] font-bold justify-center'>*Starbucks Rewards is available at participating stores. Some restrictions apply. For full program details, visit starbucks.com/rewards </span>
+    </div>
     <div className='grid  mb-[20px] mt-[20px] grid-cols-1 md:grid-cols-5 gap-8'>
         <div className="flex flex-col items-center space-y-6">
            <span className='text-xl font-bold'>About Us</span>

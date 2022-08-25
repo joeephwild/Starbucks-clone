@@ -1,10 +1,26 @@
-import React from 'react'
-import JormForm from '../components/Account/JormForm'
+import React, { useState } from 'react'
+import Footer from '../components/Account/Footer'
+import JoinNowForm from '../components/Account/JoinNowForm'
 import Navbar from '../components/Account/Navbar'
 
 const JoinNow = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setemail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (event) => {
+    console.log(`
+      Email: ${email}
+      Password: ${password}
+      FirstName: ${firstName}
+      LastName: ${lastName}
+    `);
+    event.preventDefault();
+  }
+
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <Navbar />
 
         <div className='flex flex-col items-center justify-center mt-6 w-full'>
@@ -14,7 +30,19 @@ const JoinNow = () => {
                  </p>
         </div>
 
-        <JormForm />
+        <JoinNowForm 
+        email={email}
+        password={password}
+        firstName={firstName}
+        lastName={lastName}
+        setLastName={setLastName} 
+        setFirstName={setFirstName} 
+        setPassword={setPassword}
+        setEmail={setemail}
+        handleSubmit={handleSubmit}
+         />
+
+        <Footer />
     </div>
   )
 }

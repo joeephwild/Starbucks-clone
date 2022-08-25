@@ -16,10 +16,14 @@ const Navbar = () => {
         </div>
         
         <div className='md:flex hidden space-x-6 cursor-pointer items-center'>
-            <span className='flex hover:text-green-700 space-x-2 items-center'>
-                <FaMapMarkerAlt size={20} />
+            
+              <Link to="/findstore">
+              <span className='flex hover:text-green-700 space-x-2 items-center'>
+              <FaMapMarkerAlt size={20} />
                 <span className='font-bold '>Find a store</span>
-            </span>
+                </span>
+              </Link>
+            
             <div className='flex space-x-4'>
               <Link to="/account/signin">
               <button className='text-[#000000de] border-2 border-[#000000de]  rounded-full px-3 py-2'>Sign in</button>

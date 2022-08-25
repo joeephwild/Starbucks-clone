@@ -13,8 +13,10 @@ const SignInForm = () => {
   }
 
   return (
-    <div className='w-full'>
-        <form onSubmit={handleSubmit} className='mx-auto md:max-w-[600px] block py-[98px] rounded-lg shadow-md shadow-slate-300 space-y-8 px-[90px] '> 
+    <div className='w-full mt-28'>
+      <span className='md:text-4xl  text-2xl text-[#000000de] justify-center items-center flex mb-8 font-bold text-center'>Sign in or create an account</span> 
+        <form onSubmit={handleSubmit} className='mx-auto md:max-w-[600px] block py-[98px] rounded-lg shadow-md shadow-slate-300 space-y-8 px-[90px] '>
+        
                   <div className='flex mt-28 flex-col mb-16 mx-auto'>
                   <label htmlFor='name' className="text-xl font-bold mt-6">Create Account</label>
 
@@ -40,7 +42,14 @@ const SignInForm = () => {
                     <span className='text-[#00a862] font-bold mr-[20px] text-lg underline mb-7'>Forgot your username</span>
                     <span className='text-[#00a862] font-bold mr-[20px] text-lg underline mb-7'>Forgot your Password</span>
                   </div>
+                  <button className="text-xl font-bold mb-[50px] bg-[#184733] ml-[50%] rounded-full px-5 py-4 text-[#fafafa]">Sign In</button>
          </form>
+              
+             <div className='flex flex-col bg-green-200/80 mx-[18%] rounded-lg p-[10px] justify-center items-center my-9'>
+             <span className='text-[20px]'>JOIN STARBUCKS® REWARDS</span>
+             <span className='text-[20px]  w-[30rem]'>Join Starbucks® Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.</span>
+             <button className='text-[#000000de] border-2 border-[#000000de]  rounded-full px-3 py-2'>Join now</button>
+             </div>
     </div>
   )
 }

@@ -14,7 +14,7 @@ const Banner = () => {
           <h2 className='md:text-5xl text-[#000000de] text-3xl md:max-w-[28rem] md:ml-[10%] font-semibold mb-[20px] tracking-[6px] uppercase'>GOOD MORNING!</h2>
           <p className='text-[24px] text-[#000000de] font-semibold md:max-w-[28rem] md:ml-[10% mb-[20px]'>{Brew.text}</p>
           <div>
-            <button className='border-[#000000de] border-2 text-[#000000de] mb-5 px-4 py-2 rounded-full'>Get to fun</button>
+            <button className='border-[#000000de] border-2 text-[#000000de] mb-5 px-4 py-2 rounded-full'>Get Your Rewards</button>
           </div>
         </div>
       </section>

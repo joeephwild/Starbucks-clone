@@ -1,10 +1,11 @@
 import React from 'react'
+import { Fade } from 'react-reveal';
 
 import { BackToSchool } from '../../data/MenuData';
 
 const Categories = () => {
   return (
-    <>
+    <Fade>
       <section className='mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#f8b878]'>
         <img src={BackToSchool.image} className="w-full md:order-last" alt="banner"/>
         <div className='max-w-[500px] text-center justify-self-center px-[20px] m-auto'>
@@ -15,7 +16,7 @@ const Categories = () => {
           </div>
         </div>
       </section>
-    </>
+    </Fade>
   )
 }
 

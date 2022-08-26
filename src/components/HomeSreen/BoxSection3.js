@@ -1,9 +1,10 @@
 import React from 'react'
+import { Fade } from 'react-reveal'
 import { Brew } from '../../data/MenuData'
 
 const BoxSection3 = () => {
   return (
-    <div>
+    <Fade>
         <section className='mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#f06464]'>
         <img src={Brew.image} className="w-full md:order-last md:my-5" alt="banner"/>
         <div className='max-w-[500px] text-center justify-self-center px-[20px] m-auto'>
@@ -14,7 +15,7 @@ const BoxSection3 = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Fade>
   )
 }
 

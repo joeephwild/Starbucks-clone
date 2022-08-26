@@ -1,11 +1,14 @@
 import React from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import { Fade } from 'react-reveal'
 import { Link } from 'react-router-dom'
 import MobileNav from '../MobileNav'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between border-b-2 border-gray-300 items-center w-full p-7'>
+    <div className='flex justify-between  items-center w-full '>
+    <Fade top>
+    <div className='flex justify-between border-b-2 p-6 border-gray-300 items-center w-full'>
         <div className='flex items-center '>
           <Link to="/">
           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="logo" className='w-12 h-12 object-contain' />
@@ -36,8 +39,9 @@ const Navbar = () => {
             
         </div>
         </div>
-        
-         <MobileNav />
+    </div>
+    </Fade>
+    <MobileNav />
     </div>
   )
 }

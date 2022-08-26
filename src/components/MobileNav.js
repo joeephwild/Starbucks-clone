@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineCloseCircle } from 'react-icons/ai'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import { Fade } from 'react-reveal'
 import { Link } from 'react-router-dom'
 
 const MobileNav = () => {
@@ -14,7 +15,8 @@ const MobileNav = () => {
 
       <div>
         {clicked ? 
-         <div className='fixed top-[85px] right-0 bg-[#fafafa] textee-[#000000de] overflow-hidden w-[90%] h-[100%] p-[50px] shadow-lg shadow-gray-300 transition-all'>
+        <Fade right >
+         <div className='fixed z-50 top-[90px] right-0 bg-[#fafafa] text-[#000000de] overflow-hidden w-[90%] max-h-[100%] p-[50px] shadow-lg shadow-gray-300 transition-all ease-in-out delay-300 duration-500'>
           <ul className='border-b-2 space-y-5 border-gray-300 mb-[30px]'>
             <li className="text-[20px]">Menu</li>
              <li className="text-[20px]">Rewards</li>
@@ -41,7 +43,9 @@ const MobileNav = () => {
             </div>
           </div>
          </div>
+         </Fade>
          :
+         <Fade left>
          <div className='fixed hidden top-[85px] right-0 bg-[#fafafa] textee-[#000000de] w-[90%] h-[100%] p-[30px] shadow-lg shadow-gray-300 transition-all'>
           <ul className='border-b-2 border-[#777] mb-[30px]'>
             <li className="text-[20px]">Menu</li>
@@ -70,6 +74,7 @@ const MobileNav = () => {
             </div>
           </div>
          </div>
+         </Fade>
         }
       </div>
     </div>

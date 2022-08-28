@@ -13,10 +13,10 @@ const MobileNav = () => {
     <div className="md:hidden block">
       {clicked ? <AiOutlineCloseCircle onClick={handleClicked} size={27} />  : <AiOutlineMenu size={27} onClick={handleClicked} /> } 
 
-      <div>
+      <div className=''>
         {clicked ? 
         <Fade right >
-         <div className='fixed z-50 top-[90px] right-0 bg-[#fafafa] text-[#000000de] overflow-hidden w-[90%] max-h-[100%] p-[50px] shadow-lg shadow-gray-300 transition-all ease-in-out delay-300 duration-500'>
+         <div className='fixed z-50 top-[90px] right-0 bg-[#fafafa] text-[#000000de] overflow-hidden w-[90%] max-h-[100vh] p-[50px] shadow-lg shadow-gray-300 transition-all ease-in-out delay-300 duration-500'>
           <ul className='border-b-2 space-y-5 border-gray-300 mb-[30px]'>
             <li className="text-[20px]">Menu</li>
              <li className="text-[20px]">Rewards</li>

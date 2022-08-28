@@ -6,9 +6,9 @@ import MobileNav from '../MobileNav'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between  items-center w-full '>
+    <div className='flex justify-between border-gray-300 border-b-2  items-center w-full px-6'>
     <Fade top>
-    <div className='flex justify-between border-b-2 p-6 border-gray-300 items-center w-full'>
+    <div className='flex justify-between p-6  items-center w-full'>
         <div className='flex items-center '>
           <Link to="/">
           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="logo" className='w-12 h-12 object-contain' />

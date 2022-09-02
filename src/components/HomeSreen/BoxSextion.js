@@ -2,16 +2,25 @@ import React from 'react'
 import { Fade } from 'react-reveal'
 import { Summer } from '../../data/MenuData'
 
+const style = {
+  wrapper: 'mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#2f4c39]',
+  image: "w-full md:my-5",
+  textWrapper: 'max-w-[500px] text-center justify-self-center px-[9px] md:px-[20px]',
+  heading: 'md:text-5xl text-lg md:max-w-[28rem] md:ml-[10%] text-[#fff] font-semibold mb-[20px] tracking-[6px] uppercase',
+  text: 'text-[24px] md:max-w-[28rem] md:ml-[10% mb-[20px]',
+  button: 'border-[#fff] border-2 text-[#fff] mb-5 px-4 py-2 rounded-full'
+}
+
 const BoxSextion = () => {
   return (
     <Fade>
-        <section className='mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#fa91aa]'>
-        <img src={Summer.image} className="w-full md:my-5" alt="banner"/>
-        <div className='max-w-[500px] text-center justify-self-center px-[9px] md:px-[20px]'>
-          <h2 className='md:text-5xl text-lg md:max-w-[28rem] md:ml-[10%] font-extrabold mb-[20px] tracking-[6px] uppercase'>{Summer.heading}</h2>
-          <p className='text-[24px] md:max-w-[28rem] md:ml-[10% mb-[20px]'>{Summer.text}</p>
+        <section className={style.wrapper}>
+        <img src={Summer.image} className={style.image} alt="banner"/>
+        <div className={style.textWrapper}>
+          <h2 className={style.heading}>{Summer.heading}</h2>
+          <p className={style.text}>{Summer.text}</p>
           <div>
-            <button className='border-[#00000de] border-2 text-[#000000de] mb-5 px-4 py-2 rounded-full'>{Summer.button}</button>
+            <button className={style.button}>{Summer.button}</button>
           </div>
         </div>
       </section>

@@ -1,11 +1,11 @@
-import banner from '../assets/image3.webp';
+import banner from '../assets/image3.jpg';
 import summer from '../assets/B-img2.jpg';
-import brew from '../assets/Brew.jpg';
+import brew from '../assets/brew.webp';
 
 export const  BackToSchool = {
     image: banner,
-    heading: "Back-to-school smiles",
-    text: "A Starbucks eGift makes an A+ treat for students, teachers and school support staff.",
+    heading: "Welcome home, pumpkin",
+    text: "Fall favorites return with the blissful Pumpkin Spice Latte and smooth Pumpkin Cream Cold Brew.",
     button: "Send an eGift"
 }
 
@@ -14,8 +14,8 @@ export const  BackToSchool = {
 
 export const Summer = {
     image: summer,
-    heading: "Summer’s brightest new drinks",
-    text: "Introducing the Pineapple Passionfruit Starbucks Refreshers® beverage and the Starbucks® Paradise Drink with creamy coconutmilk.",
+    heading: "Layers of baked apple yum",
+    text: "Try the Apple Crisp Oatmilk Macchiato, now nondairy and with Starbucks® Blonde Espresso.",
     button: "Learn More"
 }
 
@@ -24,8 +24,8 @@ export const Summer = {
 
 export const  Brew =  {
     image: brew,
-    heading: "Cold brew for two",
-    text: "Try the new Chocolate Cream Cold Brew with silky, chocolaty cold foam. Or go for a Vanilla Sweet Cream Cold Brew with house-made vanilla-flavored sweet cream.",
+    heading: "Picks of the patch",
+    text: "Choose a comforting classic: Pumpkin Cream Cheese Muffin, Pumpkin & Pepita Loaf or Pumpkin Scone.",
     button: "Learn More"
 }
 

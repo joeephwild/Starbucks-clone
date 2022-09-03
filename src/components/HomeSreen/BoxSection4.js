@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-reveal'
-import { Summer } from '../../data/MenuData'
+import { Section4 } from '../../data/MenuData'
 
 const style = {
   wrapper: 'mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#006241]',
@@ -11,16 +11,16 @@ const style = {
   button: 'border-[#fff] border-2 text-[#fff] mb-5 px-4 py-2 rounded-full'
 }
 
-const BoxSextion = () => {
+const BoxSection4 = () => {
   return (
     <Fade>
         <section className={style.wrapper}>
-        <img src={Summer.image} className={style.image} alt="banner"/>
+        <img src={Section4.image} className={style.image} alt="banner"/>
         <div className={style.textWrapper}>
-          <h2 className={style.heading}>{Summer.heading}</h2>
-          <p className={style.text}>{Summer.text}</p>
+          <h2 className={style.heading}>{Section4.heading}</h2>
+          <p className={style.text}>{Section4.text}</p>
           <div>
-            <button className={style.button}>{Summer.button}</button>
+            <button className={style.button}>{Section4.button}</button>
           </div>
         </div>
       </section>
@@ -28,4 +28,4 @@ const BoxSextion = () => {
   )
 }
 
-export default BoxSextion
+export default BoxSection4

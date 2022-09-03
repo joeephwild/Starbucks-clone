@@ -4,24 +4,20 @@
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 
 
-* {
-    margin: 0;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
+@font-face {
+  font-family: helvetica;
+  src: url('./assets/fonts/AG_Helvetica.ttf');
+}
+
+@font-face {
+  font-family:  Helvetica Neue ;
+  src: url('./assets/fonts/Helvetica\ Neue\ WGL.ttf');
+}
+
+@font-face {
+  font-family: Arial;
+  src: url('./assets/fonts/Arial.ttf');
+}
   
 body { 
     @apply bg-[#fafafa] relative text-[#000000de] h-[100%] font-[400]  tracking-widest leading-6 m-0 p-0;

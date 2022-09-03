@@ -4,9 +4,9 @@ import { Checkbox} from '@chakra-ui/react'
 const JormForm = ({ handleSubmit, setPassword, setFirstName, setLastName, setEmail, email, password, firstName, lastName }) => {
   return (
     <>
-       <div className="md:max-w-[100vw] max-w-[100vw] mb-[60px] mx-auto flex-col mt-16 flex  ">
+       <div className="md:max-w-[100vw] max-w-[100vw] mb-[60px] flex-col mt-6 md:mt-16 flex   ">
          
-         <form onSubmit={handleSubmit} className='mx-auto md:max-w-[600px] block py-[98px] rounded-lg shadow-md shadow-slate-300 space-y-8 px-[90px] '>
+         <form onSubmit={handleSubmit} className=' md:max-w-[600px] px-[60px] md:px-[80px] mx-auto  py-[98px]  rounded-lg shadow-md shadow-slate-300 space-y-8'>
             <p className="text-sm mb-8">* indicates required field</p>
             <label htmlFor='name' className="text-xl font-bold mt-6">Personal Information</label>
                 <input 
@@ -41,7 +41,7 @@ const JormForm = ({ handleSubmit, setPassword, setFirstName, setLastName, setEma
                     type="password" 
                      placeholder='*Password' 
                      className='md:w-[30rem] w-[25rem] px-4 border-[#00000094] mt-6 border-2 ml-[-1.6rem] mr-[-1.6rem] rounded-lg h-16' />
-                     <span className='text-sm font-semibold md:w-[28rem] text-gray-500'>Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</span>
+                     <span className='text-sm font-semibold md:w-[28rem] text-center text-gray-500'>Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</span>
                   </div>
                 
                <div className='flex flex-col mx-auto mt-16'>

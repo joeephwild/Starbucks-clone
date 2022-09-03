@@ -1,6 +1,7 @@
 import banner from '../assets/image3.jpg';
 import summer from '../assets/B-img2.jpg';
 import brew from '../assets/brew.webp';
+import section from '../assets/image04.webp';
 
 export const  BackToSchool = {
     image: banner,
@@ -29,5 +30,10 @@ export const  Brew =  {
     button: "Learn More"
 }
 
-
+export const  Section4 =  {
+    image: section,
+    heading: "The art of the roast",
+    text: "With a new roast spectrum front and center on our coffee bags, it’s easier than ever to find a taste you love.",
+    button: "Order now"
+}
 

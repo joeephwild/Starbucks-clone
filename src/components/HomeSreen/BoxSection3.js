@@ -3,11 +3,11 @@ import { Fade } from 'react-reveal'
 import { Brew } from '../../data/MenuData'
 
 const style = {
-  wrapper: 'mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#2f4c39]',
-  image: "w-full md:order-last md:my-5",
-  textWrapper: 'max-w-[500px] text-center justify-self-center px-[9px] md:px-[20px]',
-  heading: 'md:text-5xl text-[#fafafa] font-semibold text-lg md:max-w-[28rem] md:ml-[10%] md:font-semibold mb-[20px] tracking-[6px] uppercase',
-  text: 'text-[24px] text-[#fafafa] font-semibold md:max-w-[28rem] md:ml-[10% mb-[20px]',
+  wrapper: 'mt-5 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#006241]',
+  image: "w-full md:order-last",
+  textWrapper: 'max-w-[500px] text-center flex flex-col items-center justify-center px-[9px] md:px-[20px]',
+  heading: 'md:text-5xl max-w-[20rem] leading-8 tracking-wider text-[#fff]  font-bold mb-[20px]  uppercase',
+  text: 'text-[22px] max-w-[25rem] text-[#fff] md:max-w-[23rem]  mb-[20px]',
   button: 'border-[#fafafa] border-2 text-[#fafafa] mb-5 px-4 py-2 rounded-full'
 }
 

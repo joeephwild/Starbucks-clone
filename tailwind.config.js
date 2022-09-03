@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "sodosans": ["SoDoSans", "sans-serif"],
-        "helvetica": ["Helvetica", "sans-serif"]
+        "helvetica": ["Helvetica", "sans-serif"],
+        'Arial': ['Arial', 'sans-serif'],
+        'Helvetica': ['Helvetica Neue', 'sans-serif']
       }
     },
   },

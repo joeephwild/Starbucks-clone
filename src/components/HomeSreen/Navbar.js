@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom'
 import MobileNav from '../MobileNav'
 
 const style = {
-  wrapper: 'flex justify-between border-gray-300 border-b-2  items-center w-full px-6',
-  navWrapper: 'flex justify-between p-6  items-center w-full',
+  navWrapper: 'flex justify-between p-6 border-gray-300 border-b-2  items-center w-full',
   menuLinks: 'md:flex hidden ml-6 space-x-4 font-bold cursor-pointer',
   links: 'text-base hover:text-green-700',
   rightMenu: 'md:flex hidden space-x-6 cursor-pointer items-center',
@@ -19,9 +18,7 @@ const style = {
 const Navbar = () => {
   return (
     <div >
-    <Fade 
-    className={style.wrapper}
-     top>
+    
     <div className={style.navWrapper}>
         <div className='flex items-center '>
           <Link to="/">
@@ -53,9 +50,8 @@ const Navbar = () => {
             
         </div>
         </div>
-    </div>
-    </Fade>
     <MobileNav />
+    </div>
     </div>
   )
 }

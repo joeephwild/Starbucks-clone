@@ -1,12 +1,20 @@
 import React from 'react'
 import { Checkbox} from '@chakra-ui/react'
+import styled from '@emotion/styled'
+
+
+const style = {
+   wrapper: "md:max-w-[100vw] max-w-[100vw] mb-[60px] flex-col md:mt-16 flex   ",
+   formWrap: ' md:max-w-[600px] px-[40px] md:px-[80px] mx-auto  py-[98px]  rounded-lg shadow-md shadow-slate-300 space-y-8',
+   input: 'md:w-[30rem] w-[25rem]  px-4 border-[#00000094] mt-6 border-2 rounded-lg h-16'
+}
 
 const JormForm = ({ handleSubmit, setPassword, setFirstName, setLastName, setEmail, email, password, firstName, lastName }) => {
   return (
     <>
-       <div className="md:max-w-[100vw] max-w-[100vw] mb-[60px] flex-col mt-6 md:mt-16 flex   ">
+       <div className={style.wrapper}>
          
-         <form onSubmit={handleSubmit} className=' md:max-w-[600px] px-[60px] md:px-[80px] mx-auto  py-[98px]  rounded-lg shadow-md shadow-slate-300 space-y-8'>
+         <form onSubmit={handleSubmit} className={style.formWrap}>
             <p className="text-sm mb-8">* indicates required field</p>
             <label htmlFor='name' className="text-xl font-bold mt-6">Personal Information</label>
                 <input 
@@ -14,13 +22,13 @@ const JormForm = ({ handleSubmit, setPassword, setFirstName, setLastName, setEma
                 onChange={e => setFirstName(e.target.value)}
                     type="text" 
                      placeholder='*First name' 
-                     className='md:w-[30rem] w-[25rem]  px-4 border-[#00000094] mt-6 border-2 ml-[-1.6rem] mr-[-1.6rem] rounded-lg h-16' />
+                     className={style.input} />
                   <input 
                   value={lastName}
                   onChange={e => setLastName(e.target.value)}
                     type="text" 
                      placeholder='*Last name' 
-                     className='md:w-[30rem] w-[25rem]  px-4 border-[#00000094] mt-6 border-2 ml-[-1.6rem] md:mr-[-1.6rem] rounded-lg h-16' />
+                     className={style.input} />
 
                      {/* account security section */}
                   <div className='flex mt-28 flex-col mb-16 mx-auto'>
@@ -32,7 +40,7 @@ const JormForm = ({ handleSubmit, setPassword, setFirstName, setLastName, setEma
                       type="email" 
                       placeholder='*Email address' 
                       required
-                     className='md:w-[30rem] w-[25rem] px-[16px] ml-[-1.6rem] mt-6 mr-[-1.6rem] border-[#00000094] border-2 rounded-lg h-16 ' />
+                      className={style.input} />
                      <span className='text-sm font-semibold mr-[20%] text-gray-500'>This will be your username</span>
                    <input 
                    value={password}
@@ -40,7 +48,7 @@ const JormForm = ({ handleSubmit, setPassword, setFirstName, setLastName, setEma
                    required
                     type="password" 
                      placeholder='*Password' 
-                     className='md:w-[30rem] w-[25rem] px-4 border-[#00000094] mt-6 border-2 ml-[-1.6rem] mr-[-1.6rem] rounded-lg h-16' />
+                     className={style.input} />
                      <span className='text-sm font-semibold md:w-[28rem] text-center text-gray-500'>Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</span>
                   </div>
                 

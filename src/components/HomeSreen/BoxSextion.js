@@ -1,5 +1,8 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Fade } from 'react-reveal'
+=======
+>>>>>>> 49ab28f (login commit)
 import { Summer } from '../../data/MenuData'
 
 const style = {
@@ -13,7 +16,11 @@ const style = {
 
 const BoxSextion = () => {
   return (
+<<<<<<< HEAD
     <Fade>
+=======
+    <>
+>>>>>>> 49ab28f (login commit)
         <section className={style.wrapper}>
         <img src={Summer.image} className={style.image} alt="banner"/>
         <div className={style.textWrapper}>
@@ -24,7 +31,11 @@ const BoxSextion = () => {
           </div>
         </div>
       </section>
+<<<<<<< HEAD
     </Fade>
+=======
+    </>
+>>>>>>> 49ab28f (login commit)
   )
 }
 

@@ -1,5 +1,8 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Fade } from 'react-reveal';
+=======
+>>>>>>> 49ab28f (login commit)
 
 import { BackToSchool } from '../../data/MenuData';
 
@@ -14,7 +17,11 @@ const style = {
 
 const Categories = () => {
   return (
+<<<<<<< HEAD
     <Fade>
+=======
+    <>
+>>>>>>> 49ab28f (login commit)
       <section className={style.wrapper}>
         <img src={BackToSchool.image} className={style.image} alt="banner"/>
         <div className={style.textWrapper}>
@@ -25,7 +32,11 @@ const Categories = () => {
           </div>
         </div>
       </section>
+<<<<<<< HEAD
     </Fade>
+=======
+    </>
+>>>>>>> 49ab28f (login commit)
   )
 }
 

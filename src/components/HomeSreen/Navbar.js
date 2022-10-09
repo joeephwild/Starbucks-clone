@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { Fade } from 'react-reveal'
+=======
+import React , { useState} from 'react'
+import { FaMapMarkerAlt } from 'react-icons/fa'
+import { AiOutlineMenu, AiOutlineCloseCircle } from 'react-icons/ai'
+>>>>>>> 49ab28f (login commit)
 import { Link } from 'react-router-dom'
 import MobileNav from '../MobileNav'
 
@@ -16,6 +22,13 @@ const style = {
 }
 
 const Navbar = () => {
+<<<<<<< HEAD
+=======
+  const [clicked, setClicked] = useState(false);
+  const handleClicked = () => {
+     setClicked(!clicked)
+  }
+>>>>>>> 49ab28f (login commit)
   return (
     <div >
     
@@ -47,11 +60,21 @@ const Navbar = () => {
             <Link to="/account/create">
             <button className={style.button}>Join now</button>
             </Link>
+<<<<<<< HEAD
             
         </div>
         </div>
     <MobileNav />
     </div>
+=======
+        </div>
+        </div>
+        <div className='md:hidden block'>
+        {clicked ? <AiOutlineCloseCircle onClick={handleClicked} size={27} />  : <AiOutlineMenu size={27} onClick={handleClicked} /> }
+        </div>
+    </div>
+    <MobileNav clicked={clicked} />
+>>>>>>> 49ab28f (login commit)
     </div>
   )
 }

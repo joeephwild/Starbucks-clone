@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import { AiOutlineMenu, AiOutlineCloseCircle } from 'react-icons/ai'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { Fade } from 'react-reveal'
@@ -76,6 +77,23 @@ const MobileNav = () => {
          </div>
          </Fade>
         }
+=======
+import { FaMapMarkerAlt } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
+const MobileNav = ({clicked}) => {
+   
+  return (
+    <div >
+    <div className={clicked 
+      ? 'fixed right-0 bg-slate-300 p-10 justify-center items-center transition-all ease-in-out duration-500 flex flex-col' 
+    : 'fixed right-0  top-[-100] p-10 justify-center items-center transition-all ease-in-out duration-500 flex flex-col'}>
+      
+
+      
+     
+
+>>>>>>> 49ab28f (login commit)
       </div>
     </div>
   )

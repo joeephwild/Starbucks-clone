@@ -1,8 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Fade } from 'react-reveal'
-=======
->>>>>>> 49ab28f (login commit)
 import { Section4 } from '../../data/MenuData'
 
 const style = {
@@ -16,11 +12,7 @@ const style = {
 
 const BoxSection4 = () => {
   return (
-<<<<<<< HEAD
-    <Fade>
-=======
     <>
->>>>>>> 49ab28f (login commit)
         <section className={style.wrapper}>
         <img src={Section4.image} className={style.image} alt="banner"/>
         <div className={style.textWrapper}>
@@ -31,12 +23,7 @@ const BoxSection4 = () => {
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-    </Fade>
-=======
     </>
->>>>>>> 49ab28f (login commit)
   )
 }
-
 export default BoxSection4

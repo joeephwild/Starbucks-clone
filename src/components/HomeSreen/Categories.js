@@ -1,8 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Fade } from 'react-reveal';
-=======
->>>>>>> 49ab28f (login commit)
 
 import { BackToSchool } from '../../data/MenuData';
 
@@ -17,26 +13,18 @@ const style = {
 
 const Categories = () => {
   return (
-<<<<<<< HEAD
-    <Fade>
-=======
     <>
->>>>>>> 49ab28f (login commit)
-      <section className={style.wrapper}>
+         <section className={style.wrapper}>
         <img src={BackToSchool.image} className={style.image} alt="banner"/>
         <div className={style.textWrapper}>
-          <h2 className={style.heading} >{BackToSchool.heading}</h2>
+          <h2 className={style.heading}>{BackToSchool.heading}</h2>
           <p className={style.text}>{BackToSchool.text}</p>
           <div>
             <button className={style.button}>{BackToSchool.button}</button>
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-    </Fade>
-=======
     </>
->>>>>>> 49ab28f (login commit)
   )
 }
 

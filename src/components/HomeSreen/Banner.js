@@ -1,8 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Fade } from 'react-reveal';
-=======
->>>>>>> 49ab28f (login commit)
 import banner from '../../assets/b-img.jpg';
 import BoxSection3 from './BoxSection3';
 import BoxSextion from './BoxSextion';
@@ -20,11 +16,8 @@ const style = {
 
 const Banner = () => {
   return (
-<<<<<<< HEAD
-    <Fade>
-=======
     <>
->>>>>>> 49ab28f (login commit)
+    <>
        <section className={style.wrapper}>
         <img src={banner} className={style.image} alt="banner"/>
         <div className={style.textWrapper}>
@@ -35,17 +28,14 @@ const Banner = () => {
           </div>
         </div>
       </section>
-    <Categories />
-    <BoxSextion  />
+    <BoxSection4  /> 
+    <Categories />  
+     <BoxSextion  />
     <section className="">
     <BoxSection3  />
-    <BoxSection4  />
     </section>
-<<<<<<< HEAD
-   </Fade>
-=======
    </>
->>>>>>> 49ab28f (login commit)
+   </>
   )
 }
 

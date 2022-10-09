@@ -3,8 +3,6 @@
 @tailwind utilities;
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 
-<<<<<<< HEAD
-=======
 input[type='text']:focus ~ .input-text {
   @apply text-green-500 bg-[#fafafa] transform -translate-y-7 -translate-x-4 scale-75;
 }
@@ -21,7 +19,6 @@ input[type='password']:focus ~ .input-text {
 input[type='checkbox']:checked ~ .check-1 {
   @apply text-opacity-100 ;
 }
->>>>>>> 49ab28f (login commit)
 
 @font-face {
   font-family: helvetica;

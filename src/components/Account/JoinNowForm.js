@@ -6,11 +6,21 @@ import { AiOutlineCheck, AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons
 const style = {}
 
 const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, password, firstName, lastName }) => {
+  const { register, handleSubmit, watch, formState: {errors}} = useForm();
     const [type, setType] = useState('password');
     const [icon, setIcon] = useState(AiOutlineEyeInvisible);
 
     //handle password icon toogle
-    
+    const handleToogle = () => {
+      if(type === 'password'){
+        setType('text')
+        setIcon(AiOutlineEye)
+      }else {
+        setType('password')
+        setIcon(AiOutlineEyeInvisible)
+      }
+      
+    }
   return (
     <>
        <div className='max-w-[500px] !mx-auto pb-[4.2rem]'>

@@ -21,8 +21,8 @@ const JoinNowAccount = ({setPassword, setFirstName, setLastName, setEmail, email
         <>
        <div className='max-w-[500px] !mx-auto pb-[4.2rem]'>
          
-         <form className='shadow-lg mt-11 shadow-gray-400'>
-          <div className='px-[3.5rem] py-[1.5rem]'>
+         <form className='md:shadow-lg  mt-11 md:shadow-gray-400'>
+          <div className='md:px-[3.5rem] py-[1.5rem]'>
           <div className='mx-auto  space-y-4 '>
           <p className='text-sm font-medium mb-3 text-[#000] m-0'>* indicates required field</p>
             <span className='text-[15px] mb-3 font-semibold text-[#000]' >

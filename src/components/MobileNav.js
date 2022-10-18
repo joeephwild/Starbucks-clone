@@ -20,10 +20,10 @@ const MobileNav = ({clicked}) => {
          {/* buttons */}
             <div className='flex space-x-5'>
               <Link to="/account/signin">
-              <button className='text-[#000000de] border-2 border-[#000000de] text-sm rounded-full px-3.5 py-2'>Sign in</button>
+              <button className='text-[#000000de] border-2 border-[#000000de] text-sm rounded-full px-3.5 py-1.5'>Sign in</button>
               </Link>
             <Link to="/account/create">
-            <button className='bg-[#000000de] text-[#fafafa] px-3.5 py-2 text-sm rounded-full'>Join now</button>
+            <button className='bg-[#000000de] text-[#fafafa] px-3.5 py-1.5 text-sm rounded-full'>Join now</button>
             </Link>
         </div>
         <Link to="/findstore">

@@ -29,7 +29,7 @@ const Navbar = () => {
           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="logo" className='w-12 h-12 object-contain' />
           </Link>
           {/* middle links */}
-        <div className={style.menuLinks}>
+          <div className={style.menuLinks}>
             <div className={style.links}>MENU</div>
             <div className={style.links}>REWARDS</div>
             <div className={style.links}>GIFT CARDS</div>

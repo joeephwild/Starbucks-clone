@@ -9,8 +9,8 @@ input[type='text']:focus ~ .input-text {
 input[type='email']:focus ~ .input-text {
   @apply text-green-500 bg-[#fafafa] transform -translate-y-7 -translate-x-4 scale-75;
 }
-input:not(placeholder-shown) + label {
-  @apply text-green-500 bg-[#fafafa] transform -translate-y-7 -translate-x-4 scale-75
+input:has(placeholder-shown) + label {
+  @apply top-4 left-0;
 }
 input[type='password']:focus ~ .input-text {
   @apply text-green-500 bg-[#fafafa] transform -translate-y-7 -translate-x-4 scale-75;

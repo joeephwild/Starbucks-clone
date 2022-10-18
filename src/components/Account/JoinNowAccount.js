@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
-import { useForm } from 'react-hook-form'
 import { AiOutlineCheck, AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai'
 
-const style = {}
-
-const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, password, firstName, lastName }) => {
-  const { register, handleSubmit, watch, formState: {errors}} = useForm();
+const JoinNowAccount = ({setPassword, setFirstName, setLastName, setEmail, email, password, firstName, lastName }) => {
     const [type, setType] = useState('password');
     const [icon, setIcon] = useState(AiOutlineEyeInvisible);
 
@@ -21,10 +17,12 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
       
     }
   return (
-    <>
+    <div>
+        <>
        <div className='max-w-[500px] !mx-auto pb-[4.2rem]'>
          
-         <form onSubmit={handleSubmit} className={style.formWrap}>
+         <form className='shadow-lg mt-11 shadow-gray-400'>
+          <div className='px-[3.5rem] py-[1.5rem]'>
           <div className='mx-auto  space-y-4 '>
           <p className='text-sm font-medium mb-3 text-[#000] m-0'>* indicates required field</p>
             <span className='text-[15px] mb-3 font-semibold text-[#000]' >
@@ -33,7 +31,6 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
               <div className='block space-y-4 mb-[-1.6rem] '>
               <div className='flex relative  items-center'>
               <input 
-              {...register({firstName})}
                 value={firstName}
                 onChange={e => setFirstName(e.target.value)}
                     type="text" 
@@ -49,7 +46,6 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
               <div className='flex relative items-center'>
               <input 
               name={lastName}
-              {...register({lastName})}
                   value={lastName}
                   onChange={e => setLastName(e.target.value)}
                     type="text" 
@@ -67,7 +63,6 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
                    <div className='flex relative items-center'>
                    <input 
                    name={email}
-                   {...register({email}, { required: true, maxLength: 20 })}
                      value={email}
                      onChange={e => setEmail(e.target.value)}
                       type="email" 
@@ -79,9 +74,6 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
                    <span className='pt-2 m-0 tracking-tight text-sm font-semibold font-sodosans text-[#000]'>This will be your username</span>
                    <div className='flex relative items-center'>
                    <input 
-                   {...register({password}, { required: true,
-                     minLength: 10, 
-                     pattern: {value:A-Za-z1-9}})}
                    value={password}
                    onChange={e => setPassword(e.target.value)}
                    required
@@ -90,20 +82,10 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
                      placeholder='' 
                      className='bg-transparent px-6 h-14 focus:border-[#006241] w-full  outline-none border-2  border-gray-400 rounded-lg ' />
                       <label className='input-text text-sm absolute top-4 left-0 mx-6 px-6  transition duration-200 cursor-text  font-bold text-[#000]' htmlFor='name'>*Password</label>
-                      <div onClick={handleToogle} className='absolute text-xl h-5 w-5 top-3 right-4'>
+                      <div onClick={handleToogle} className='absolute text-3xl h-5 w-5 top-3 right-4'>
                         {icon}
                       </div>
                    </div>
-                   {errors.password && 
-                   <div>
-                    <p>from 8 to 25 characters</p>
-                   <p>At least one number</p>
-                   <p>At least one capital letter</p>
-                   <p>At least one lowercase letter</p>
-                   <p>At least one special character character such as exclamation point or comma</p>
-                   </div>
-                   
-                   }
                      <span className='pt-2 m-0  text-sm tracking-tight font-semibold text-[#000]'>
                      Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter,
                       1 number and 1 special character like an exclamation point or asterisk.
@@ -149,10 +131,7 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
                 </div>
                 <div >
                 </div>
-
-                
                </div>
-
                     {/* terms of use */}
                    
                      <span>TERMS OF USE</span>
@@ -171,10 +150,12 @@ const JormForm = ({setPassword, setFirstName, setLastName, setEmail, email, pass
                <div className='!justify-end mt-[4rem] !flex'>
                <button type='submit' className='bg-[#00754a] py-3 rounded-full text-center px-9 text-xl font-bold shadow-xl shadow-gray-300 transition ease text-[#fff]' >Create account</button>
                </div>
+               </div>
          </form>
        </div>
     </>
+    </div>
   )
 }
 
-export default JormForm
+export default JoinNowAccount
